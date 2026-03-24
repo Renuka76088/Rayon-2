@@ -7,22 +7,22 @@ const products = [
     id: 1,
     name: "Ethereal Wrap",
     category: "Signature Rayon",
-    price: "$89",
-    image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&q=80",
+    price: "Rs89",
+    image: "https://img.freepik.com/premium-photo/examples-fabric-various-color-type_77684-19494.jpg?ga=GA1.1.124606815.1772781809&semt=ais_hybrid&w=740&q=80",
   },
   {
     id: 2,
     name: "Dawn Tunic",
     category: "Fluid Collection",
-    price: "$120",
-    image: "https://images.unsplash.com/photo-1551163943-3f6a855d1153?auto=format&fit=crop&q=80",
+    price: "Rs120",
+    image: "https://img.freepik.com/free-photo/line-hanging-textured-fabrics-different-colors-shades_181624-5610.jpg?ga=GA1.1.124606815.1772781809&semt=ais_hybrid&w=740&q=80",
   },
   {
     id: 3,
     name: "Mist Overshirt",
     category: "Lightweight Series",
-    price: "$95",
-    image: "https://images.unsplash.com/photo-1515347619252-60a4bdad8560?auto=format&fit=crop&q=80",
+    price: "Rs95",
+    image: "https://img.freepik.com/premium-photo/examples-colorful-fabric-various-color-type_77684-76671.jpg?ga=GA1.1.124606815.1772781809&semt=ais_hybrid&w=740&q=80",
   }
 ];
 
@@ -130,7 +130,7 @@ export default function Home() {
           <div className="relative">
             <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&q=80" 
+                src="https://img.freepik.com/premium-photo/crumpled-linen-cloth-texture-wrinkled-textile-yellow_317399-461.jpg?w=1060" 
                 alt="Craftsmanship" 
                 className="w-full h-full object-cover"
               />
@@ -146,7 +146,7 @@ export default function Home() {
             {/* Small Floating Image */}
             <div className="absolute -top-10 -left-10 w-40 h-40 rounded-full border-8 border-surface overflow-hidden shadow-lg hidden xl:block">
                <img 
-                src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&q=80" 
+                src="https://img.freepik.com/premium-photo/abstract-white-satin-silky-cloth-background-fabric-textile-drape-with-crease-wavy-folds-with-soft-waves-waving-wind_44622-983.jpg?ga=GA1.1.124606815.1772781809&semt=ais_hybrid&w=740&q=80" 
                 alt="Texture Detail" 
                 className="w-full h-full object-cover"
               />
