@@ -10,7 +10,7 @@ export default function ProductHighlight() {
 <div class="absolute inset-0 bg-gradient-to-r from-surface/60 to-transparent"></div>
 </div>
 <div class="relative z-10 max-w-2xl">
-<span class="uppercase tracking-[0.3em] text-xs font-semibold text-primary mb-6 block">Established 1974</span>
+<span class="uppercase tracking-[0.3em] text-xs font-semibold text-primary mb-6 block">Established 2007</span>
 <h1 class="font-headline text-7xl font-bold tracking-tighter text-on-surface leading-[0.95] mb-8">
                     Beyond the Thread:<br/>The Parekh Story
                 </h1>
@@ -37,7 +37,7 @@ export default function ProductHighlight() {
 </div>
 <div class="grid grid-cols-2 gap-8">
 <div class="p-8 bg-surface-container-low rounded-xl">
-<h3 class="font-headline text-2xl mb-4">1974</h3>
+<h3 class="font-headline text-2xl mb-4">2007</h3>
 <p class="text-sm text-on-secondary-fixed-variant">The first shuttle loom begins its rhythmic dance in our family workshop.</p>
 </div>
 <div class="p-8 bg-secondary-container rounded-xl">
@@ -49,36 +49,70 @@ export default function ProductHighlight() {
 </div>
 </section>
 {/* <!-- Sustainable Innovation --> */}
-<section class="bg-surface-container-low py-32 mb-48">
-<div class="px-12 max-w-[1440px] mx-auto">
-<div class="text-center mb-20">
-<h2 class="font-headline text-5xl mb-6">Sustainable Innovation</h2>
-<p class="max-w-xl mx-auto text-on-surface-variant">Luxury shouldn't cost the Earth. Our Rayon is crafted through processes that respect both the artisan and the environment.</p>
-</div>
-<div class="grid grid-cols-3 gap-8">
-<div class="bg-surface p-12 rounded-xl flex flex-col items-center text-center group hover:bg-surface-container transition-colors duration-500">
-<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center mb-8">
-<span class="material-symbols-outlined text-primary scale-125" data-icon="eco">eco</span>
-</div>
-<h3 class="font-headline text-2xl mb-4">100% Biodegradable</h3>
-<p class="text-on-surface-variant text-sm leading-loose">Derived from nature, our fibers return to nature. A complete lifecycle without synthetic residue.</p>
-</div>
-<div class="bg-surface p-12 rounded-xl flex flex-col items-center text-center group hover:bg-surface-container transition-colors duration-500">
-<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center mb-8">
-<span class="material-symbols-outlined text-primary scale-125" data-icon="rebase">rebase</span>
-</div>
-<h3 class="font-headline text-2xl mb-4">Closed-Loop Processing</h3>
-<p class="text-on-surface-variant text-sm leading-loose">99% of chemicals used in our production are recovered and reused, minimizing wastewater impact.</p>
-</div>
-<div class="bg-surface p-12 rounded-xl flex flex-col items-center text-center group hover:bg-surface-container transition-colors duration-500">
-<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center mb-8">
-<span class="material-symbols-outlined text-primary scale-125" data-icon="forest">forest</span>
-</div>
-<h3 class="font-headline text-2xl mb-4">Ethical Forestry</h3>
-<p class="text-on-surface-variant text-sm leading-loose">We source exclusively from FSC-certified forests, ensuring zero deforestation in our supply chain.</p>
-</div>
-</div>
-</div>
+<section class="bg-[#FDFBF7] py-32 mb-48 relative overflow-hidden">
+  <div class="absolute -top-10 -left-10 text-[15rem] font-serif text-[#E6DBC4]/10 select-none pointer-events-none">
+    ECO
+  </div>
+
+  <div class="px-6 md:px-12 max-w-[1440px] mx-auto">
+    <div class="flex flex-col md:flex-row items-end justify-between mb-24 gap-8">
+      <div class="max-w-2xl">
+        <span class="text-[#B79A63] font-bold tracking-[0.3em] uppercase text-xs mb-4 block">Our Commitment</span>
+        <h2 class="font-serif text-5xl md:text-7xl text-[#333333] leading-tight">
+          Sustainable <br />
+          <span class="italic font-light ml-12 md:ml-24 text-[#5C4A2A]">Innovation</span>
+        </h2>
+      </div>
+      <div class="max-w-sm pb-2">
+        <p class="text-[#5C4A2A]/70 text-lg font-light leading-relaxed border-l-2 border-[#B79A63] pl-6">
+          Luxury shouldn't cost the Earth. Our Rayon is crafted through processes that respect both the artisan and the environment.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
+      
+      <div class="group relative mt-12 transition-all duration-700 hover:-translate-y-4">
+        <div class="bg-white p-12 rounded-[3rem] shadow-[0_20px_50px_rgba(183,154,99,0.1)] border border-[#E6DBC4]/30 relative z-10 overflow-hidden">
+          <div class="w-16 h-16 rounded-full bg-[#F4EFE6] flex items-center justify-center mb-10 group-hover:bg-[#5C4A2A] transition-colors duration-500">
+            <span class="material-symbols-outlined text-[#B79A63] text-3xl group-hover:text-white transition-colors">eco</span>
+          </div>
+          <h3 class="font-serif text-2xl text-[#333333] mb-6">100% <br/>Biodegradable</h3>
+          <p class="text-[#5C4A2A]/70 text-sm leading-[1.8] font-light">Derived from nature, our fibers return to nature. A complete lifecycle without synthetic residue or harmful impact.</p>
+          
+          <div class="mt-8 h-px w-0 bg-[#B79A63] group-hover:w-full transition-all duration-700"></div>
+        </div>
+        <div class="absolute -bottom-4 -right-4 w-full h-full border border-[#B79A63]/20 rounded-[3rem] -z-10 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform"></div>
+      </div>
+
+      <div class="group relative transition-all duration-700 hover:-translate-y-4">
+        <div class="bg-[#5C4A2A] p-12 rounded-[3rem] shadow-2xl relative z-10 overflow-hidden">
+          <div class="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center mb-10 group-hover:bg-[#B79A63] transition-colors duration-500">
+            <span class="material-symbols-outlined text-white text-3xl" data-icon="rebase">rebase</span>
+          </div>
+          <h3 class="font-serif text-2xl text-white mb-6">Closed-Loop <br/>Processing</h3>
+          <p class="text-white/70 text-sm leading-[1.8] font-light">99% of chemicals used in our production are recovered and reused, ensuring zero wastewater impact on our ecosystems.</p>
+          
+          <div class="mt-8 h-px w-0 bg-white/30 group-hover:w-full transition-all duration-700"></div>
+        </div>
+        <div class="absolute -top-10 -right-10 w-32 h-32 bg-[#B79A63]/10 rounded-full blur-2xl group-hover:scale-150 transition-transform"></div>
+      </div>
+
+      <div class="group relative mt-12 transition-all duration-700 hover:-translate-y-4">
+        <div class="bg-white p-12 rounded-[3rem] shadow-[0_20px_50px_rgba(183,154,99,0.1)] border border-[#E6DBC4]/30 relative z-10 overflow-hidden">
+          <div class="w-16 h-16 rounded-full bg-[#F4EFE6] flex items-center justify-center mb-10 group-hover:bg-[#5C4A2A] transition-colors duration-500">
+            <span class="material-symbols-outlined text-[#B79A63] text-3xl group-hover:text-white transition-colors">forest</span>
+          </div>
+          <h3 class="font-serif text-2xl text-[#333333] mb-6">Ethical <br/>Forestry</h3>
+          <p class="text-[#5C4A2A]/70 text-sm leading-[1.8] font-light">We source exclusively from FSC-certified forests, ensuring zero deforestation and full traceability in our supply chain.</p>
+          
+          <div class="mt-8 h-px w-0 bg-[#B79A63] group-hover:w-full transition-all duration-700"></div>
+        </div>
+        <div class="absolute -bottom-4 -right-4 w-full h-full border border-[#B79A63]/20 rounded-[3rem] -z-10 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform"></div>
+      </div>
+
+    </div>
+  </div>
 </section>
 {/* <!-- The Art of the Drape --> */}
 <section class="px-12 max-w-[1440px] mx-auto mb-48">

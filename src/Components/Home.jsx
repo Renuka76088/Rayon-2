@@ -34,7 +34,7 @@ const blogs = [
     date: "12 March 2026",
     title: "The Breathing Thread: Why Rayon is the Future of Sustainable Fashion",
     excerpt: "Explore how HC Parekh is revolutionizing textile comfort with eco-friendly beechwood fibers.",
-    image: "https://images.unsplash.com/photo-1558271823-6624a54721a4?auto=format&fit=crop&q=80",
+    image: "https://img.freepik.com/premium-photo/needle-cotton-yarn-sewing-thread-fabric_53876-55101.jpg?ga=GA1.1.124606815.1772781809&semt=ais_hybrid&w=740&q=80",
     tag: "Sustainability"
   },
   {
@@ -42,7 +42,7 @@ const blogs = [
     date: "05 March 2026",
     title: "Mastering the Drape: A Guide to Rayon Maintenance",
     excerpt: "Keep the fluid sheen of your garments alive with our expert care and handling tips.",
-    image: "https://images.unsplash.com/photo-1620799139507-2a76f79a2f4d?auto=format&fit=crop&q=80",
+    image: "https://img.freepik.com/premium-photo/fabric-store-there-are-rolls-fabrics-different-colors-shelves-yarn-business-tailoring-clothes-bed-linen-made-natural-linen-cotton_678914-14974.jpg?ga=GA1.1.124606815.1772781809&semt=ais_hybrid&w=740&q=80",
     tag: "Fabric Care"
   },
   {
@@ -50,7 +50,7 @@ const blogs = [
     date: "28 Feb 2026",
     title: "Summer 2026 Trends: Fluidity in Everyday Wear",
     excerpt: "From office to evening soirées, discover how rayon adapts to every movement of your life.",
-    image: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&q=80",
+    image: "https://img.freepik.com/premium-photo/stack-multi-colored-satin-fabric-blue-background-space-text_83196-1323.jpg?ga=GA1.1.124606815.1772781809&semt=ais_hybrid&w=740&q=80",
     tag: "Trends"
   }
 ];
@@ -357,7 +357,7 @@ export default function Home() {
         {/* Background Texture Overlay */}
         <div className="absolute inset-0 opacity-10 pointer-events-none">
           <img 
-            src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&q=80" 
+            src="https://img.freepik.com/free-photo/close-up-velvet-texture_23-2149305958.jpg?ga=GA1.1.124606815.1772781809&semt=ais_hybrid&w=740&q=80" 
             alt="Rayon Texture" 
             className="w-full h-full object-cover mix-blend-overlay"
           />

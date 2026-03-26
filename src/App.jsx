@@ -20,6 +20,7 @@ import CustomerReview from './Pages/CustomerReview'
 import Appointment from './Pages/Appointment'
 import MediaGallery from './Pages/MediaGallery'
 import Associates from './Pages/Associates'
+import ScrollToTop from '../ScrollToTop'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -27,6 +28,7 @@ function App() {
   return (
     <>
      <BrowserRouter>
+       <ScrollToTop />
      <Header />
      <Routes>
       <Route path='/' element={<Landing/>}/>

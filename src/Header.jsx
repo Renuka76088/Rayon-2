@@ -40,12 +40,30 @@ export default function Header() {
       <header className="fixed top-0 w-full z-[100] bg-white/90 backdrop-blur-xl border-b border-stone-200 shadow-sm">
         <div className="max-w-7xl mx-auto flex justify-between items-center px-6 md:px-10 py-5">
           
-          {/* --- LEFT: Brand Logo --- */}
-          <Link to="/" className="z-[130]">
-            <h1 className="text-xl md:text-2xl font-headline font-black tracking-widest text-[#4A4238] uppercase">
-              PAREKH<span className="text-[#C5A27D] font-light italic">RAYON</span>
-            </h1>
-          </Link>
+  {/* --- LEFT: Brand Logo --- */}
+<Link to="/" className="z-[130] flex items-center no-underline">
+  {/* 🟢 Premium "P" Box with Shadow & Gradient */}
+  <div 
+    style={{
+      background: 'linear-gradient(135deg, rgba(113, 127, 224, 0.15) 0%, rgba(113, 127, 224, 0.05) 100%)',
+      boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08), inset 0 1px 1px rgba(255, 255, 255, 0.3)'
+    }}
+    className="w-[42px] h-[42px] md:w-[48px] md:h-[48px] border-2 border-[#C5A27D] rounded-xl flex items-center justify-center mr-3 shrink-0 transition-all duration-300 hover:scale-105"
+  >
+    <span className="text-[#C5A27D] font-black text-2xl md:text-3xl leading-none">P</span>
+  </div>
+
+  {/* 🟢 Text Section (Zero Space) */}
+  <div className="flex flex-col justify-center">
+    <h1 className="flex items-center text-xl md:text-2xl font-black tracking-tighter uppercase leading-none">
+      <span className="text-[#4A4238]">PAREKH</span>
+      <span className="text-[#C5A27D]">RAYON</span>
+    </h1>
+    <span className="text-[9px] md:text-[11px] font-bold tracking-[0.3em] text-[#8b8175] uppercase mt-1">
+      RAIPUR • CG
+    </span>
+  </div>
+</Link>
 
           {/* --- RIGHT: Desktop Navigation --- */}
           <nav className="hidden lg:flex items-center gap-10">

@@ -11,6 +11,7 @@ import {
   ArrowRight,
   Sparkles
 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -28,12 +29,29 @@ export default function Footer() {
           {/* Brand & Identity (Spans 4 columns) */}
           <div className="lg:col-span-4 space-y-8">
             <div className="space-y-4">
-              <div className="flex items-center gap-2">
-                <Sparkles className="text-[#C5A27D]" size={20} />
-                <span className="font-headline italic text-3xl md:text-4xl text-[#4A4238] tracking-tight">
-                  PAREKH RAYON
-                </span>
-              </div>
+         <Link to="/" className="z-[130] flex items-center no-underline">
+  {/* 🟢 Premium "P" Box with Shadow & Gradient */}
+  <div 
+    style={{
+      background: 'linear-gradient(135deg, rgba(113, 127, 224, 0.15) 0%, rgba(113, 127, 224, 0.05) 100%)',
+      boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08), inset 0 1px 1px rgba(255, 255, 255, 0.3)'
+    }}
+    className="w-[42px] h-[42px] md:w-[48px] md:h-[48px] border-2 border-[#C5A27D] rounded-xl flex items-center justify-center mr-3 shrink-0 transition-all duration-300 hover:scale-105"
+  >
+    <span className="text-[#C5A27D] font-black text-2xl md:text-3xl leading-none">P</span>
+  </div>
+
+  {/* 🟢 Text Section (Zero Space) */}
+  <div className="flex flex-col justify-center">
+    <h1 className="flex items-center text-xl md:text-2xl font-black tracking-tighter uppercase leading-none">
+      <span className="text-[#4A4238]">PAREKH</span>
+      <span className="text-[#C5A27D]">RAYON</span>
+    </h1>
+    <span className="text-[9px] md:text-[11px] font-bold tracking-[0.3em] text-[#8b8175] uppercase mt-1">
+      RAIPUR • CG
+    </span>
+  </div>
+</Link>
               <p className="text-[#6B5E4C] font-light text-base leading-relaxed max-w-xs" style={{fontSize:'20px'}}>
                 Crafting fluid elegance since generations. We weave sustainability with heritage to define the future of textiles.
               </p>
@@ -90,11 +108,11 @@ export default function Footer() {
                    <Mail size={18} strokeWidth={1.5} />
                 </a>
                 <a href="tel:+919876543210" className="flex items-center lg:justify-end gap-3 text-stone-600 hover:text-[#C5A27D] transition-colors">
-                   <span className="text-sm font-medium" style={{fontSize:'19px'}}>+91 98765 43210</span>
+                   <span className="text-sm font-medium" style={{fontSize:'19px'}}>+91 11111 1111</span>
                    <Phone size={18} strokeWidth={1.5} />
                 </a>
                 <div className="flex items-center lg:justify-end gap-3 text-stone-400">
-                   <span className="text-sm text-right" style={{fontSize:'17px'}}>Indore HQ, MP, India</span>
+                   <span className="text-sm text-right" style={{fontSize:'17px'}}> Raipur CG, India</span>
                    <MapPin size={18} strokeWidth={1.5} />
                 </div>
               </div>
