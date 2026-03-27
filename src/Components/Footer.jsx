@@ -136,7 +136,7 @@ export default function Footer() {
         {/* --- BOTTOM BAR --- */}
         <div className="pt-12 border-t border-stone-100/50 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-[10px] tracking-[0.2em] text-stone-400 font-bold uppercase">
-            © {currentYear} PAREKH RAYON EDITIONS. MADE IN INDORE.
+            © {currentYear} PAREKH RAYON EDITIONS.
           </p>
           <div className="flex items-center gap-6">
              <span className="text-[9px] uppercase tracking-widest text-stone-300">Fluidity • Heritage • Innovation</span>
