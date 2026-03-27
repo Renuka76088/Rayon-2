@@ -73,7 +73,7 @@ export default function Footer() {
           {/* Navigation (Spans 5 columns) */}
           <div className="lg:col-span-5 grid grid-cols-2 gap-8">
             <div className="space-y-8">
-              <h4 className="text-[10px] tracking-[0.3em] uppercase font-black text-[#C5A27D]" style={{fontSize:'17px'}}>Company</h4>
+              <h4 className="text-[10px] uppercase font-black text-[#C5A27D]" style={{fontSize:'17px'}}>Company</h4>
               <ul className="space-y-4">
                 {['Our Story', 'Sustainable Fiber', 'Tenders', 'Career'].map((item) => (
                   <li key={item}>
@@ -85,7 +85,7 @@ export default function Footer() {
               </ul>
             </div>
             <div className="space-y-8">
-              <h4 className="text-[10px] tracking-[0.3em] uppercase font-black text-[#C5A27D]" style={{fontSize:'17px'}}>Resources</h4>
+              <h4 className="text-[10px] uppercase font-black text-[#C5A27D]" style={{fontSize:'17px'}}>Resources</h4>
               <ul className="space-y-4">
                 {['Journal', 'Product Gallery', 'Vendor Portal', 'Privacy'].map((item) => (
                   <li key={item}>
