@@ -43,7 +43,7 @@ const Circular = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <span className="text-[#C5A27D] text-xs tracking-[0.6em] uppercase font-bold mb-6 block">
+              <span className="text-[#C5A27D] text-2xl  uppercase font-bold mb-6 block">
                 Official Communications
               </span>
               <h1 className="text-6xl md:text-8xl font-headline italic tracking-tighter mb-10 leading-[0.9]">
@@ -51,7 +51,7 @@ const Circular = () => {
                 <span className="text-[#C5A27D]">Notices</span>
               </h1>
               <p className="text-xl md:text-2xl font-light text-[#6B5E4C] max-w-2xl leading-[1.8]">
-                HC Parekh Chamber ke sabhi official updates, policies aur operational guidelines yahan access karein. Hum transparency aur efficiency par vishwas rakhte hain.
+                "Access all official updates, collection launches, and operational policies for Parekh Rayon here. We are dedicated to delivering excellence through transparency and operational efficiency."
               </p>
             </motion.div>
           </div>
@@ -60,7 +60,7 @@ const Circular = () => {
             <div className="aspect-[3/4] rounded-[2rem] overflow-hidden shadow-[0_30px_60px_-15px_rgba(197,162,125,0.2)] border-[10px] border-white">
               <img 
                 className="w-full h-full object-cover grayscale-[0.2]" 
-                src="https://images.unsplash.com/photo-1558271823-6624a54721a4?auto=format&fit=crop&q=80" 
+                src="https://img.freepik.com/free-photo/traditional-weaving-loom_23-2151949045.jpg?t=st=1774619392~exp=1774622992~hmac=f09526cecf55f8c21912128b9169431b95b48f916e84ef4b40a8ae5308605b0f&w=1480" 
                 alt="Textile Loom"
               />
             </div>
@@ -129,11 +129,7 @@ const Circular = () => {
             </div>
 
             {/* Pagination / "Load More" */}
-            <div className="mt-20 text-center">
-              <button className="text-[10px] uppercase tracking-[0.5em] font-bold text-[#C5A27D] border-b-2 border-[#EAE3D8] pb-1 hover:border-[#C5A27D] transition-colors">
-                View Older Notices
-              </button>
-            </div>
+           
           </div>
         </section>
       </div>

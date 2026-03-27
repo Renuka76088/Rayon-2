@@ -48,12 +48,12 @@ function Appointment() {
             >
               <div className="group border-l-2 border-[#C5A27D] pl-8 py-2">
                 <h3 className="text-2xl font-headline text-[#4A4238] mb-2">Expert Guidance</h3>
-                <p className="text-[#6B5E4C] font-light leading-relaxed">Hamare fabric specialists aapko best rayon weaves aur blend options guide karenge.</p>
+                <p className="text-[#6B5E4C] font-light leading-relaxed">"Our fabric specialists will guide you through our finest rayon weaves and premium blend options."</p>
               </div>
 
               <div className="group border-l-2 border-[#EAE3D8] hover:border-[#C5A27D] transition-colors pl-8 py-2">
                 <h3 className="text-2xl font-headline text-[#4A4238] mb-2">Tactile Sampling</h3>
-                <p className="text-[#6B5E4C] font-light leading-relaxed">Appointment ke dauran aap hamari latest collection ko mehsoos kar sakte hain.</p>
+                <p className="text-[#6B5E4C] font-light leading-relaxed">"Experience the tactile luxury of our latest collection firsthand during your appointment."</p>
               </div>
 
               <div className="pt-12">

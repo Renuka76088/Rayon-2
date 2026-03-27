@@ -83,55 +83,59 @@ function CustomerReview() {
 
           {/* --- Right Column: Creative Submit Review Form --- */}
           <div className="lg:col-span-6 sticky top-24">
-            <motion.div 
-              initial={{ opacity: 0, x: 30 }}
-              animate={{ opacity: 1, x: 0 }}
-              className="bg-white/90 backdrop-blur-3xl rounded-[2.5rem] p-12 md:p-16 border border-[#EAE3D8] shadow-[0_50px_100px_-20px_rgba(197,162,125,0.1)]"
-            >
-              <h2 className="text-3xl font-headline italic text-[#4A4238] mb-4">Share Your Experience</h2>
-              <p className="text-[#6B5E4C] text-[16px] font-light mb-12 max-w-sm">Hum aapke comments ko seriously lete hain taaki rayon ka ehsas aur bhi behtar ho sake.</p>
-              
-              <form className="space-y-12">
-                <div className="group flex flex-col space-y-3 relative">
-                  <label className="text-[11px] uppercase tracking-[0.3em] font-bold text-[#C5A27D]">Full Name / Title</label>
-                  <input className="bg-transparent border-b-2 border-[#EAE3D8] py-4 outline-none focus:border-[#C5A27D] transition-all text-lg placeholder:text-[#C5A27D]/30" placeholder="E.g. Rajesh Kumar, Fashion Lead" />
-                </div>
-                
-                {/* 🌟 Creative Star Rating Selection */}
-                <div className="space-y-4">
-                  <label className="text-[11px] uppercase tracking-[0.3em] font-bold text-[#C5A27D]">Rate the Craftsmanship</label>
-                  <div className="flex gap-3">
-                    {[...Array(5)].map((_, i) => {
-                      const ratingValue = i + 1;
-                      return (
-                        <label key={i} className="cursor-pointer">
-                          <input type="radio" name="rating" value={ratingValue} onClick={() => setSelectedRating(ratingValue)} className="hidden" />
-                          <motion.span 
-                            whileHover={{ scale: 1.2 }}
-                            animate={{ opacity: ratingValue <= selectedRating ? 1 : 0.4 }}
-                            className={`material-symbols-outlined text-3xl ${ratingValue <= selectedRating ? 'text-[#C5A27D] fill-current' : 'text-[#EAE3D8]'}`}
-                          >star</motion.span>
-                        </label>
-                      );
-                    })}
-                  </div>
-                </div>
+  <motion.div 
+    initial={{ opacity: 0, x: 30 }}
+    animate={{ opacity: 1, x: 0 }}
+    className="bg-white/90 backdrop-blur-3xl rounded-[2.5rem] p-12 md:p-16 border border-[#EAE3D8] shadow-[0_50px_100px_-20px_rgba(197,162,125,0.1)]"
+  >
+    <h2 className="text-3xl font-headline italic text-[#4A4238] mb-4">Share Your Experience</h2>
+    {/* Updated English Description */}
+    <p className="text-[#6B5E4C] text-[16px] font-light mb-12 max-w-sm">
+      We value your feedback as it helps us refine the Rayon experience and elevate our craftsmanship.
+    </p>
+    
+    <form className="space-y-12">
+      <div className="group flex flex-col space-y-3 relative">
+        <label className="text-[11px] uppercase tracking-[0.3em] font-bold text-[#C5A27D]">Full Name / Title</label>
+        <input className="bg-transparent border-b-2 border-[#EAE3D8] py-4 outline-none focus:border-[#C5A27D] transition-all text-lg placeholder:text-[#C5A27D]/30" placeholder="E.g. Rajesh Kumar, Fashion Lead" />
+      </div>
+      
+      {/* 🌟 Creative Star Rating Selection */}
+      <div className="space-y-4">
+        <label className="text-[11px] uppercase tracking-[0.3em] font-bold text-[#C5A27D]">Rate the Craftsmanship</label>
+        <div className="flex gap-3">
+          {[...Array(5)].map((_, i) => {
+            const ratingValue = i + 1;
+            return (
+              <label key={i} className="cursor-pointer">
+                <input type="radio" name="rating" value={ratingValue} onClick={() => setSelectedRating(ratingValue)} className="hidden" />
+                <motion.span 
+                  whileHover={{ scale: 1.2 }}
+                  animate={{ opacity: ratingValue <= selectedRating ? 1 : 0.4 }}
+                  className={`material-symbols-outlined text-3xl ${ratingValue <= selectedRating ? 'text-[#C5A27D] fill-current' : 'text-[#EAE3D8]'}`}
+                >star</motion.span>
+              </label>
+            );
+          })}
+        </div>
+      </div>
 
-                <div className="group flex flex-col space-y-3">
-                  <label className="text-[11px] uppercase tracking-[0.3em] font-bold text-[#C5A27D]">Your Testimonial</label>
-                  <textarea rows={3} className="bg-transparent border-b-2 border-[#EAE3D8] py-4 outline-none focus:border-[#C5A27D] transition-all text-lg resize-none placeholder:text-[#C5A27D]/30" placeholder="Aapke comments rayon ke ehsas ko aur bhi behtar banayenge..." />
-                </div>
+      <div className="group flex flex-col space-y-3">
+        <label className="text-[11px] uppercase tracking-[0.3em] font-bold text-[#C5A27D]">Your Testimonial</label>
+        {/* Updated Placeholder */}
+        <textarea rows={3} className="bg-transparent border-b-2 border-[#EAE3D8] py-4 outline-none focus:border-[#C5A27D] transition-all text-lg resize-none placeholder:text-[#C5A27D]/30" placeholder="Your insights help us redefine the fluidity and feel of our textiles..." />
+      </div>
 
-                <motion.button 
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="w-full py-6 rounded-full bg-[#C5A27D] text-white font-bold text-xs uppercase tracking-[0.4em] shadow-xl hover:bg-[#B38E66] transition-all"
-                >
-                  Submit Appreciation
-                </motion.button>
-              </form>
-            </motion.div>
-          </div>
+      <motion.button 
+        whileHover={{ scale: 1.02 }}
+        whileTap={{ scale: 0.98 }}
+        className="w-full py-6 rounded-full bg-[#C5A27D] text-white font-bold text-xs uppercase tracking-[0.4em] shadow-xl hover:bg-[#B38E66] transition-all"
+      >
+        Submit Appreciation
+      </motion.button>
+    </form>
+  </motion.div>
+</div>
 
         </div>
       </div>

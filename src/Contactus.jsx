@@ -40,7 +40,7 @@ function Contactus() {
       </section>
 
       {/* --- Section 2: Contact Matrix --- */}
-    (
+    
     <section className="relative px-6 md:px-20 py-28 overflow-hidden bg-[#f8f5f0]">
 
       {/* 🌟 Fabric Gradient Layers */}

@@ -23,7 +23,7 @@ function Enquiry() {
               </h1>
               {/* Bada aur clear P tag */}
               <p className="text-xl md:text-2xl font-light text-[#6B5E4C] max-w-2xl leading-[1.8]">
-                Elevating the textile trade through collaborative excellence. Hamara maqsad rayon ki legacy ko modern global trade insights ke saath jodna hai. Join our elite circle to access exclusive innovations.
+                "Elevating the textile trade through collaborative excellence. Our mission is to bridge the legacy of premium Rayon with modern global trade insights. Join our elite circle to access exclusive innovations and industry-leading standards."
               </p>
             </motion.div>
           </div>
@@ -67,9 +67,9 @@ function Enquiry() {
               
               <div className="space-y-12" >
                 {[
-                  { id: "01", title: "Digital Application", desc: "Shuruat karein apne basic trade details ke saath." },
-                  { id: "02", title: "Document Upload", desc: "GST, Trade license aur tax details upload karein." },
-                  { id: "03", title: "Official Audit", desc: "Verification process by our experts (48-72 hours)." }
+                  { id: "01", title: "Digital Application", desc: "Get started by providing your basic trade details." },
+                  { id: "02", title: "Document Upload", desc: "Please upload your GST certificate, Trade License, and relevant tax documents." },
+                  { id: "03", title: "Official Audit", desc: "Our experts will complete the verification process within 48-72 hours." }
                 ].map((step) => (
                   <div key={step.id} className="group">
                     <div className="flex items-center gap-4 mb-3">

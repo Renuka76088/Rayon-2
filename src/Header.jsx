@@ -20,6 +20,7 @@ export default function Header() {
     { name: 'e-Quotation', path: '/quotation' },
     { name: 'e-Auction', path: '/auction' },
     { name: 'Tender & Contract', path: '/contract' },
+    { name: 'Circular', path: '/circular' },
     { name: 'Career Page', path: '/career' },
     { name: 'Customer Review', path: '/review' },
     { name: 'Visit Appointment', path: '/appointment' },
@@ -40,30 +41,28 @@ export default function Header() {
       <header className="fixed top-0 w-full z-[100] bg-white/90 backdrop-blur-xl border-b border-stone-200 shadow-sm">
         <div className="max-w-7xl mx-auto flex justify-between items-center px-6 md:px-10 py-5">
           
-  {/* --- LEFT: Brand Logo --- */}
-<Link to="/" className="z-[130] flex items-center no-underline">
-  {/* 🟢 Premium "P" Box with Shadow & Gradient */}
-  <div 
-    style={{
-      background: 'linear-gradient(135deg, rgba(113, 127, 224, 0.15) 0%, rgba(113, 127, 224, 0.05) 100%)',
-      boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08), inset 0 1px 1px rgba(255, 255, 255, 0.3)'
-    }}
-    className="w-[42px] h-[42px] md:w-[48px] md:h-[48px] border-2 border-[#C5A27D] rounded-xl flex items-center justify-center mr-3 shrink-0 transition-all duration-300 hover:scale-105"
-  >
-    <span className="text-[#C5A27D] font-black text-2xl md:text-3xl leading-none">P</span>
-  </div>
+          {/* --- LEFT: Brand Logo --- */}
+          <Link to="/" className="z-[130] flex items-center no-underline">
+            <div 
+              style={{
+                background: 'linear-gradient(135deg, rgba(113, 127, 224, 0.15) 0%, rgba(113, 127, 224, 0.05) 100%)',
+                boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08), inset 0 1px 1px rgba(255, 255, 255, 0.3)'
+              }}
+              className="w-[42px] h-[42px] md:w-[48px] md:h-[48px] border-2 border-[#C5A27D] rounded-xl flex items-center justify-center mr-3 shrink-0 transition-all duration-300 hover:scale-105"
+            >
+              <span className="text-[#C5A27D] font-black text-2xl md:text-3xl leading-none">P</span>
+            </div>
 
-  {/* 🟢 Text Section (Zero Space) */}
-  <div className="flex flex-col justify-center">
-   <h1 className="flex items-center gap-x-2 text-xl md:text-2xl font-black tracking-tighter uppercase leading-none">
-  <span className="text-[#4A4238]">PAREKH</span>
-  <span className="text-[#C5A27D]">RAYON</span>
-</h1>
-    <span className="text-[9px] md:text-[11px] font-bold tracking-[0.3em] text-[#8b8175] uppercase mt-1">
-      RAIPUR • CG
-    </span>
-  </div>
-</Link>
+            <div className="flex flex-col justify-center">
+              <h1 className="flex items-center gap-x-2 text-xl md:text-2xl font-black tracking-tighter uppercase leading-none">
+                <span className="text-[#4A4238]">PAREKH</span>
+                <span className="text-[#C5A27D]">RAYON</span>
+              </h1>
+              <span className="text-[9px] md:text-[11px] font-bold tracking-[0.3em] text-[#8b8175] uppercase mt-1">
+                RAIPUR • CG
+              </span>
+            </div>
+          </Link>
 
           {/* --- RIGHT: Desktop Navigation --- */}
           <nav className="hidden lg:flex items-center gap-10">
@@ -73,14 +72,13 @@ export default function Header() {
               </Link>
             ))}
 
-            {/* Desktop Dropdown */}
             <div 
               className="relative group py-2"
               onMouseEnter={() => setIsPagesOpen(true)}
               onMouseLeave={() => setIsPagesOpen(false)}
             >
               <button className="nav-link-style flex items-center gap-1">
-                Pages <span className="material-symbols-outlined text-xs"></span>
+                Pages 
               </button>
               <AnimatePresence>
                 {isPagesOpen && (
@@ -156,7 +154,6 @@ export default function Header() {
                 </div>
               </div>
             </div>
-
             <div className="p-10 bg-stone-50 text-center">
               <p className="text-xs text-stone-400 tracking-widest uppercase">Premium Rayon Textiles • 2026</p>
             </div>
@@ -164,7 +161,28 @@ export default function Header() {
         )}
       </AnimatePresence>
 
-      {/* CSS Utility for consistency */}
+      {/* 🟢 FLOATING WHATSAPP BUTTON (Bottom Right) */}
+      <motion.a
+        href="https://wa.me/91XXXXXXXXXX" // Apna WhatsApp number yahan dalein
+        target="_blank"
+        rel="noopener noreferrer"
+        initial={{ scale: 0, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        className="fixed bottom-8 right-8 z-[150] w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center shadow-[0_10px_25px_rgba(37,211,102,0.3)] border-2 border-white cursor-pointer"
+      >
+        <svg 
+          viewBox="0 0 24 24" 
+          width="32" 
+          height="32" 
+          fill="white" 
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+      </motion.a>
+
       <style jsx>{`
         .nav-link-style {
           font-family: 'Headline', sans-serif;

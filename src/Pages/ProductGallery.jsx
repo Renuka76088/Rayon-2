@@ -186,7 +186,10 @@ function ProductGallery() {
         <div class="absolute w-32 h-32 bg-[#B79A63]/20 rounded-full blur-3xl group-hover:scale-150 transition-transform"></div>
         
         <div class="relative z-10">
-          <span class="material-symbols-outlined text-5xl text-[#B79A63] mb-6 animate-pulse" style="font-variation-settings: 'FILL' 1">opacity</span>
+         <span
+  className="material-symbols-outlined text-5xl text-[#B79A63] mb-6 animate-pulse"
+  style={{ fontVariationSettings: "'FILL' 1" }}
+></span>
           <h4 class="font-serif text-2xl text-white mb-4 tracking-wide">Lustrous Sheen</h4>
           <p class="text-white/60 text-xs leading-[1.8] font-light max-w-[220px]">
             A subtle, multidimensional glow that mimics the complex reflection of natural silk without the fragility.
@@ -220,14 +223,14 @@ function ProductGallery() {
 <p class="text-sm md:text-base text-on-surface-variant mt-1">100% Premium Rayon Twill • Ivory</p>
 </div>
 <div class="text-right">
-<p class="font-label font-bold text-xl">$285</p>
+
 <button class="mt-2 text-[10px] uppercase tracking-widest font-bold text-primary border-b border-primary/30 hover:border-primary transition-all pb-0.5">Quick Add</button>
 </div>
 </div>
 </div>
 <div class="relative group lg:mt-32">
 <div class="aspect-[2/3] w-full rounded-xl overflow-hidden bg-surface-container shadow-2xl">
-<img alt="Rayon Detail" class="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105" data-alt="Fashion portrait highlighting the texture of clothing" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZNmw618kKjH6esfyyYkqMJnAclPpkMnViCGjs1Ko0RUOYiIG6ku5ltHTf0lIOGs1xLLDfeZMPjvFmCvXRqP0VcCY-R9cyTLfrlbh3QaJRb7Sve3UvoVqjTiNxfw8uV0kVSnKLKD-Rd6r7gyZoD3aXUmHk_RvXrSW4dtNgQ87K7-kYayE4_m2vDXLDBVW-6HIfGYYzb0Ql4zOifGx-xjFE8boB2H3Fv0P1zHMOZl1WusExv8WYMlc64yra-FeXviiCCJG4Ah5bka0"/>
+<img alt="Rayon Detail" class="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105" data-alt="Fashion portrait highlighting the texture of clothing" src="https://img.freepik.com/free-photo/color-tone-texture-fabric-sample_1373-421.jpg?ga=GA1.1.124606815.1772781809&semt=ais_hybrid&w=740&q=80"/>
 </div>
 <div class="mt-6 flex justify-between items-start px-2">
 <div>
@@ -235,7 +238,7 @@ function ProductGallery() {
 <p class="text-sm md:text-base text-on-surface-variant mt-1">Lightweight Satin Finish • Sand</p>
 </div>
 <div class="text-right">
-<p class="font-label font-bold text-xl">$140</p>
+
 <button class="mt-2 text-[10px] uppercase tracking-widest font-bold text-primary border-b border-primary/30 hover:border-primary transition-all pb-0.5">Quick Add</button>
 </div>
 </div>
