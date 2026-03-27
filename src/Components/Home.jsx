@@ -387,7 +387,7 @@ export default function Home() {
             <div className="group cursor-pointer">
               <p className="text-[10px] uppercase tracking-widest opacity-50 mb-2 group-hover:text-secondary-container transition-colors">Corporate Headquarters</p>
               <p className="text-xl font-body leading-relaxed">
-                Indore, Madhya Pradesh <br />
+                Raipur . CG <br />
                 The Textile Hub of Central India
               </p>
             </div>
@@ -395,11 +395,11 @@ export default function Home() {
             <div className="flex flex-col md:flex-row gap-10">
               <div className="group cursor-pointer">
                 <p className="text-[10px] uppercase tracking-widest opacity-50 mb-2 group-hover:text-secondary-container transition-colors">Direct Dial</p>
-                <p className="text-xl font-body">+91 98765 43210</p>
+                <p className="text-xl font-body">+91 1111 11111</p>
               </div>
               <div className="group cursor-pointer">
                 <p className="text-[10px] uppercase tracking-widest opacity-50 mb-2 group-hover:text-secondary-container transition-colors">Email Journal</p>
-                <p className="text-xl font-body">hello@hcparekh.com</p>
+                <p className="text-xl font-body">info@hcparekh.com</p>
               </div>
             </div>
           </div>

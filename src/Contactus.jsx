@@ -61,8 +61,8 @@ function Contactus() {
             </h2>
 
             <p className="text-base text-[#6b6359] leading-relaxed">
-              42 Silk Road, Textile District,<br />
-              Surat, Gujarat 395003, India
+              <br />
+              Raipur, CG , India
             </p>
           </div>
 
@@ -189,18 +189,44 @@ function Contactus() {
     </section>
 
       {/* --- Section 3: Full Width Map --- */}
-      <section className="relative h-[600px] w-full grayscale contrast-125 hover:grayscale-0 transition-all duration-1000">
-        <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdnXYcMS8tSp26CAGslbQ1v4QvtxdhwbfDSqAoiWNCChpmVotiEaPLbbTburrs2wYsLhVdmSka32M2Pft9bUx_93ieffiaTXxypQtLKdLwxuyBp0d5FxmmpSco3eq-OrNZ2sTQofnQxcdcIM65vA-dWED3YeXq7q3j3fZD6QE1ZjbV1-PO7JHpFL-CUBLkQoIv58kXqV8q11ZzB7IL4i5lHAJdwXagtsJAmx8E-PZd4YlLPrVF7dc2ZxKjafEfHFTdWzkoWNa77tI" alt="Surat Map"/>
-        <div className="absolute inset-0 bg-primary/10 mix-blend-color" />
-        {/* Pointer */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
-          <div className="w-20 h-20 rounded-full bg-primary/20 animate-ping absolute -top-8 -left-8" />
-          <div className="w-4 h-4 rounded-full bg-primary relative z-10 shadow-[0_0_20px_rgba(var(--primary),0.5)]" />
-          <div className="mt-4 bg-white px-4 py-2 rounded-lg shadow-2xl">
-            <p className="text-[10px] font-bold uppercase tracking-widest">The Studio HQ</p>
-          </div>
-        </div>
-      </section>
+<section className="relative h-[600px] w-full grayscale contrast-125 hover:grayscale-0 transition-all duration-1000 overflow-hidden">
+
+  {/* Responsive Map */}
+  <div className="w-full h-full">
+    <iframe
+      src="https://www.google.com/maps?q=Raipur,Chhattisgarh&output=embed"
+      className="w-full h-full border-0"
+      allowFullScreen
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-primary/5 pointer-events-none mix-blend-color" />
+
+  {/* Location Pointer */}
+  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center pointer-events-none">
+    
+    {/* Ping Effect */}
+    <div className="w-20 h-20 rounded-full bg-primary/20 animate-ping absolute -top-8 -left-8" />
+    
+    {/* Dot */}
+    <div className="w-4 h-4 rounded-full bg-primary relative z-10 shadow-[0_0_20px_rgba(var(--primary),0.5)]" />
+    
+    {/* Label */}
+    <div className="mt-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-lg shadow-2xl border border-gray-100">
+      <p className="text-[10px] font-bold uppercase tracking-widest text-black">
+        Raipur, CG
+      </p>
+      <p className="text-[8px] text-gray-500 uppercase">
+        Chhattisgarh, India
+      </p>
+    </div>
+  </div>
+
+</section>
+
     </main>
   );
 }
