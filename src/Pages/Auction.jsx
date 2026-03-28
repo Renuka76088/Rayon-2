@@ -1,163 +1,184 @@
-import React from 'react'
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 
 function Auction() {
-  return (
-<>
+    return (
+        <main className="relative min-h-screen pt-32 pb-24 overflow-hidden">
+            {/* */}
+         <div class="absolute inset-0 -z-10 opacity-30">
+                <img class="w-full h-full object-cover" data-alt="High-resolution close-up of ivory-colored flowing rayon fabric" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWt4TjFpw-ES1YNXJ3VBDjE5EgjLmw21RzQ7GAUro8FGp9UW5bw1C1DzOPSpdXUD2A037XbXLGsfReEsE_XPN2Gw2yAVnE91bEYSN6Titi6acVIW4RN7SenJWh-pgvW38voVZeXcooF0382JAW33EL9mzfVJfdpIEH7E4G3pgGxP_wbzRAMlPzCIg665KANmog6eNV3mqSFAb-6-aGIwfmlU-TUODJ_N3_2mlMaBXobr4v8S14KCR8WrotEoQq3wkBlehN4nqqTns" />
+            </div>
 
-<main class="pt-32">
-{/* <!-- Hero Section: The Celestial Silk --> */}
-<section class="px-6 md:px-24 mb-32">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
-<div class="lg:col-span-7 relative group">
-<div class="overflow-hidden rounded-xl bg-surface-container-low aspect-[4/5] md:aspect-video">
-<img alt="Celestial Silk Rayon" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close up of flowing iridescent cream rayon fabric" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFRIYDRy8i-a1lrz8bOxCaYdKHqqBpv7jEyEOVk5madWwv2QM6HgL2BB3I_Jb8c3K9m06pHdMvUufJczTX0eJTjz54UMRflrqIM1RpU_C1eFjQewFW9Hs8zGMEMgvYjKBKf7o2N9vRpvUeyNij7lCA-L0V90oMg4oMTc3vDUKrlm5YRK3P8-XWwbl0M40XK9q0RCEKAq00psCXxQeiM_BDyuTeGWvRswJv-Ov3JtKsMXDTcYvcVmyEimfeQ0xRHZrqr0ZvHpU64RQ"/>
-</div>
-<div class="absolute -bottom-6 -right-6 hidden md:block w-48 h-48 rounded-xl overflow-hidden shadow-2xl">
-<img alt="Texture detail" class="w-full h-full object-cover" data-alt="Extreme macro of rayon textile weave" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtbi73oo3biPm-1kGWwchvrefUQ5jxN8Ob-iUC9Tvc-zqwWkbps2Nc0ToUK89PyQl0KlmDEbrN00wXovRV7t4Q_t3ZD-5MI77z5Ff8YmMF0JRGfPUmtfDIglY6G6miY7hjMsZFv--V6B26D5a0g-_w3TwEUE9cWhL_R73yMOHk1rPAqdpRAQAJqa2KPBVv2G9vGPp3oyQtjsussIBFAyuiLlSd3sRfRzBzkVlKKd8UkLX3_pcPfX_n3qDF4vPfa7VkTY8E0Lo9KPg"/>
-</div>
-</div>
-<div class="lg:col-span-5 flex flex-col justify-end">
-<span class="font-body text-sm tracking-[0.2em] uppercase text-tertiary mb-4">Current Lot: 042</span>
-<h1 class="serif-headline text-5xl md:text-7xl font-light leading-tight text-on-surface mb-8">
-                        Celestial Silk <br/><span class="italic">Rayon</span>
-</h1>
-<div class="bg-surface-container-low p-8 rounded-xl space-y-6">
-<div class="flex justify-between items-baseline">
-<span class="font-body text-on-surface-variant">Current Bid</span>
-<span class="serif-headline text-3xl font-medium">$4,850.00</span>
-</div>
-<div class="flex justify-between items-center border-t border-outline-variant/20 pt-4">
-<span class="font-body text-on-surface-variant flex items-center gap-2">
-<span class="material-symbols-outlined text-sm" data-icon="schedule">schedule</span>
-                                Time Remaining
-                            </span>
-<span class="font-body font-bold tracking-widest uppercase">14h : 22m : 05s</span>
-</div>
-<a class="block w-full text-center py-5 signature-gradient text-on-primary rounded-xl font-medium tracking-wide transition-all active:scale-95 shadow-xl" href="#bid-form">
-                            Register Your Bid
-                        </a>
-</div>
-</div>
-</div>
-</section>
-{/* <!-- Fabric Attributes: Editorial Narrative --> */}
-<section class="bg-surface-container-low py-32 px-6 md:px-24">
-<div class="max-w-4xl mx-auto space-y-24">
-<div class="text-center">
-<h2 class="serif-headline text-4xl mb-6">The Art of Fluidity</h2>
-<div class="w-12 h-[1px] bg-primary mx-auto"></div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-<div>
-<h3 class="serif-headline text-2xl italic mb-4">Luminous Sheen</h3>
-<p class="font-headline text-lg md:text-xl font-light leading-relaxed text-on-surface-variant">
-                            Capturing light as if it were water, the Celestial series features a unique cross-weave that reflects the softest ambient glow. It doesn't just shine; it breathes with the room.
-                        </p>
-</div>
-<div class="rounded-xl overflow-hidden aspect-square bg-surface-container-high">
-<img alt="Soft Sheen" class="w-full h-full object-cover" data-alt="Draped champagne fabric showing light reflection" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe7h_FuehhGoOhi00CwZDrItJSC4VWaL-vvtkPQkpUnZef76QQ77doAGEA0CaYBeiBkXcjYP_esFGKxOdYiVmc97oCCPB1BBSYGSYD4iA12lBg4wFDBU51XLhzZGdfVMVsDvbyW7hfvrm_-WetUv8RvA_OK8rUwvHk37lYmhwHgxQ-ok7VjOSBd8w-OZ6iU9B5k35Hfg6GZzcHASEpb-U8SF78anHRbVkRCZBWOqc4YG0cb5co5zmu30yu_zashcHS1iFmEJ1pyrw"/>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-<div class="order-2 md:order-1 rounded-xl overflow-hidden aspect-square bg-surface-container-high">
-<img alt="Drape" class="w-full h-full object-cover" data-alt="Fluid movement of light textile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTH2I4Y9WfUGU37WGcaU6GGPrFppaFn9640ZkxLHncP91ViJVIofkYWRJvvK2J6KRXFHUDg4p8xIsGoBkgpxlwH-zZ1-caLn7n66-G0ODq4BmmFU2nbhK7dasFCkYJ22WG1TsnjIQN7pCfkZQqCztDucvPLATro6MMj2_yFQZqxj2JEelHCytZ544YCumrDkQ3yVKhy9TRGoI4LmAOsUCMmofQZOKx2blXkROswbMm8_YRBJLKTk3PHWhEqjsa62RzhDbESpvkkb0"/>
-</div>
-<div class="order-1 md:order-2">
-<h3 class="serif-headline text-2xl italic mb-4">Soft Breathability</h3>
-<p class="font-headline text-lg md:text-xl font-light leading-relaxed text-on-surface-variant">
-                            Engineered for effortless wear, the fiber structure allows for maximum air circulation. A fabric that maintains its cool composure even in the height of the summer solstice.
-                        </p>
-</div>
-</div>
-<div class="text-center pt-12">
-<h3 class="serif-headline text-2xl italic mb-4">Sustainable Origin</h3>
-<p class="font-headline text-lg md:text-2xl font-light leading-relaxed text-on-surface-variant max-w-2xl mx-auto">
-                        Crafted from regenerative wood pulp in our solar-powered loom house. Luxury that respects the earth it was born from.
+            {/* */}
+            <div className="max-w-7xl mx-auto px-8 md:px-24 grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+                
+                {/* */}
+                <div className="lg:col-span-5 space-y-12">
+                    <div className="space-y-6">
+                        <h1 className="font-headline font-light text-7xl md:text-8xl tracking-tight text-on-surface leading-[0.9]">
+                            Auction <br /> <span className="italic text-primary">Inventory</span>
+                        </h1>
+                        <div className="h-1 w-24 bg-primary-container"></div>
+                    </div>
+                    
+                    <p className="font-body text-xl md:text-2xl font-light text-on-surface-variant leading-relaxed">
+                        Submit your exclusive textile batches for our premium auction house. Reach global designers and architectural firms looking for high-end sustainable weaves.
                     </p>
-</div>
-</div>
-</section>
-{/* <!-- Lot Gallery: Texture Bento --> */}
-<section class="px-6 md:px-24 py-32">
-<div class="mb-12">
-<h2 class="serif-headline text-3xl font-light italic">Texture Study</h2>
-</div>
-<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-<div class="col-span-2 row-span-2 rounded-xl overflow-hidden bg-surface-container">
-<img alt="Fabric Angle 1" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="Abstract macro of beige silk texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCq-o9Z6VtDCaEmw8OszJciqj8EPsM7bale2jqxnSxpl0HFA7QHeOW_MQz4PuJjpZAIHAbfg6qqNG9hC0JvwiKqJw93DbrganbmggYzVCng1QucH2yFc8qQhAI5rTIYz3hrK1qYNdz4ZXdgqIfbPiLKh3-Sn0FrTm4O69Jb2QkNYfhbUt7boEzLMwouhODXqqXd5_T_-cZxr_g3eAENljs9XS4ysL67WArV9qjMRgRyp-6f-GtS_lpPQNRC6Zit_NoQSPEQNqfy4nY"/>
-</div>
-<div class="rounded-xl overflow-hidden bg-surface-container h-64">
-<img alt="Fabric Angle 2" class="w-full h-full object-cover" data-alt="Stacked textile rolls in neutral tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkyoQkYc4YwOFRYYzEVLT0_jJv7KBgkwcQz3H-Uyqe7KgrqkZcaiDGtADZP8_k8lEgkWEbRQlI3jO-_kkk4uXCFnilyxdUaXMLP9uSDghZxdoyGnFu52sDd8mQHIdUMM10iS-igVooqhy87teMXnyuontr0Z5rGez1-aYmYZ7kHTxQPos__EDrAEbr1pJF-3me8kamvgamx7sk_UaVwtFWEwNDed1KztcHUIcYGJ47seaoPpAPllTyHu8Xp9p1uRrdsrAt2cTPutM"/>
-</div>
-<div class="rounded-xl overflow-hidden bg-surface-container h-64">
-<img alt="Fabric Angle 3" class="w-full h-full object-cover" data-alt="Folds of smooth cream rayon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU8A15YhFEhpi6EcPQVPRDiOciKz9-9XkGhnIi77quTtL48kXCr8WOUbKSZrK1aAufI_QeCyrSMkJCOAuOALnoDfa-kJBtQKp8QQKU5OYVBVKGKM2D3kbUYgITUgmQs19cwu3qzE3vGyV4iIQs2ZaxdVOjylVVlMR0MQiuofADY-g9FJC0fUGhny8kgJXN4i-XA_HNH0bC1qiC-qj-o2XV8pat-SR9sixviQyZQ-DNz_V4-5bSaUpc1v7nThW_3ZTvclcKzkPLsMk"/>
-</div>
-<div class="col-span-2 rounded-xl overflow-hidden bg-surface-container h-64">
-<img alt="Fabric Angle 4" class="w-full h-full object-cover" data-alt="Wide shot of draped luxury fabric in studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoyxp6zu3Hi1J0W2yCCi9EDNo3Kyb8pN4kVOqZ31WzHLphXdacCWZr9yfY4F51h2uCIHRC0vaai8TRRP72HSGO89q7M0gxhdNwmQCjRZ2HvsX_K6DtibheZDiDyilY3k_dO3Txzm2QwYnXY4yP-Z5iBfrhGCphfayYH5geYuD2KbcGtm--2aZxI4ePzdLZ8GyhaRe8nvBectLeKaGAOJ43xGIH8JxHI-iR4XtSl_UkXTsiKKAj9U5t9R8Z96q76Pw2NqCu5xCkGhc"/>
-</div>
-</div>
-</section>
-{/* <!-- Auction Detail & Bid Form --> */}
-<section class="px-6 md:px-24 mb-32" id="bid-form">
-<div class="max-w-6xl mx-auto bg-surface-container-lowest rounded-[2rem] p-8 md:p-16 shadow-[0_12px_40px_rgba(28,28,25,0.04)] grid grid-cols-1 lg:grid-cols-2 gap-16">
-<div>
-<h2 class="serif-headline text-4xl mb-6">Place Your Bid</h2>
-<p class="font-body text-on-surface-variant mb-12">
-                        Bidding for Lot 042 is subject to the terms of the Parekh Archive. Please ensure your Bidder ID is verified before final submission.
-                    </p>
-<ul class="space-y-6">
-<li class="flex items-start gap-4">
-<span class="material-symbols-outlined text-tertiary mt-1" data-icon="check_circle">check_circle</span>
-<div>
-<span class="block font-bold text-sm uppercase tracking-wider">Lot Integrity</span>
-<p class="text-sm text-on-surface-variant">Includes certificate of provenance and original loom notes.</p>
-</div>
-</li>
-<li class="flex items-start gap-4">
-<span class="material-symbols-outlined text-tertiary mt-1" data-icon="local_shipping">local_shipping</span>
-<div>
-<span class="block font-bold text-sm uppercase tracking-wider">Insured Transit</span>
-<p class="text-sm text-on-surface-variant">Global white-glove delivery in climate-controlled packaging.</p>
-</div>
-</li>
-</ul>
-</div>
-<form class="space-y-8">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<div class="space-y-2">
-<label class="font-body text-xs font-bold uppercase tracking-widest text-on-surface-variant">Full Name</label>
-<input class="w-full bg-surface-container border-none rounded-xl p-4 focus:ring-1 focus:ring-primary-container focus:bg-surface-container-lowest transition-all" placeholder="Julianne Vane" type="text"/>
-</div>
-<div class="space-y-2">
-<label class="font-body text-xs font-bold uppercase tracking-widest text-on-surface-variant">Bidder ID</label>
-<input class="w-full bg-surface-container border-none rounded-xl p-4 focus:ring-1 focus:ring-primary-container focus:bg-surface-container-lowest transition-all" placeholder="PT-9932" type="text"/>
-</div>
-</div>
-<div class="space-y-2">
-<label class="font-body text-xs font-bold uppercase tracking-widest text-on-surface-variant">Email Address</label>
-<input class="w-full bg-surface-container border-none rounded-xl p-4 focus:ring-1 focus:ring-primary-container focus:bg-surface-container-lowest transition-all" placeholder="collector@archive.com" type="email"/>
-</div>
-<div class="space-y-2 pt-4">
-<label class="font-body text-xs font-bold uppercase tracking-widest text-on-surface-variant">Your Bid Amount (USD)</label>
-<div class="relative">
-<span class="absolute left-4 top-1/2 -translate-y-1/2 font-serif text-xl">$</span>
-<input class="w-full bg-surface-container border-none rounded-xl p-4 pl-10 text-2xl font-serif focus:ring-1 focus:ring-primary-container focus:bg-surface-container-lowest transition-all" placeholder="5200.00" type="number"/>
-</div>
-<p class="text-[10px] text-tertiary italic">Minimum next bid: $4,950.00</p>
-</div>
-<button class="w-full py-6 bg-on-background text-surface rounded-xl font-bold uppercase tracking-[0.2em] hover:bg-primary transition-all active:scale-95 shadow-lg" type="submit">
-                        Confirm &amp; Submit Bid
-                    </button>
-<p class="text-center text-xs text-on-surface-variant/60 italic">
-                        By clicking confirm, you agree to our Terms of Auction.
-                    </p>
-</form>
-</div>
-</section>
-</main>
 
-</>
-  )
+                    <div className="space-y-8 pt-8">
+                        <div className="flex items-start gap-6">
+                            <div className="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center shrink-0">
+                                <span className="material-symbols-outlined text-primary">gavel</span>
+                            </div>
+                            <div>
+                                <h3 className="font-headline text-xl mb-1">Global Bidding</h3>
+                                <p className="text-sm text-on-surface-variant">Access to a network of 500+ luxury fashion houses and boutiques.</p>
+                            </div>
+                        </div>
+                        <div className="flex items-start gap-6">
+                            <div className="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center shrink-0">
+                                <span className="material-symbols-outlined text-primary">verified</span>
+                            </div>
+                            <div>
+                                <h3 className="font-headline text-xl mb-1">Quality Assurance</h3>
+                                <p className="text-sm text-on-surface-variant">Every lot is verified by our master weavers before going live.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* */}
+                <div className="lg:col-span-7">
+  <div className="bg-white/80 backdrop-blur-xl rounded-2xl p-10 md:p-14 shadow-lg border border-gray-200">
+    
+    <form action="#" className="space-y-10">
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10">
+
+        {/* Lot Name */}
+        <div className="group">
+          <label className="block text-xs font-semibold uppercase tracking-wider text-gray-500 mb-2 group-focus-within:text-primary transition">
+            Lot / Fabric Name
+          </label>
+          <input
+            type="text"
+            placeholder="Raw Mulberry Silk Batch"
+            className="w-full bg-white/70 border border-gray-200 rounded-xl px-4 py-3 font-body 
+            focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary 
+            shadow-sm hover:shadow-md transition-all placeholder:text-gray-400"
+          />
+        </div>
+
+        {/* Category */}
+        <div className="group">
+          <label className="block text-xs font-semibold uppercase tracking-wider text-gray-500 mb-2 group-focus-within:text-primary transition">
+            Category
+          </label>
+          <select
+            className="w-full bg-white/70 border border-gray-200 rounded-xl px-4 py-3 font-body 
+            focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary 
+            shadow-sm hover:shadow-md transition-all appearance-none cursor-pointer"
+          >
+            <option>Premium Silk</option>
+            <option>Organic Cotton</option>
+            <option>Recycled Viscose</option>
+            <option>Architectural Mesh</option>
+          </select>
+        </div>
+
+        {/* Quantity */}
+        <div className="group">
+          <label className="block text-xs font-semibold uppercase tracking-wider text-gray-500 mb-2 group-focus-within:text-primary transition">
+            Total Quantity (Meters)
+          </label>
+          <input
+            type="number"
+            placeholder="e.g. 1200"
+            className="w-full bg-white/70 border border-gray-200 rounded-xl px-4 py-3 font-body 
+            focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary 
+            shadow-sm hover:shadow-md transition-all placeholder:text-gray-400"
+          />
+        </div>
+
+        {/* Price */}
+        <div className="group">
+          <label className="block text-xs font-semibold uppercase tracking-wider text-gray-500 mb-2 group-focus-within:text-primary transition">
+            Reserve Price (Per Meter)
+          </label>
+          <input
+            type="text"
+            placeholder="$ 45.00"
+            className="w-full bg-white/70 border border-gray-200 rounded-xl px-4 py-3 font-body 
+            focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary 
+            shadow-sm hover:shadow-md transition-all placeholder:text-gray-400"
+          />
+        </div>
+
+        {/* Duration */}
+        <div className="md:col-span-2 group">
+          <label className="block text-xs font-semibold uppercase tracking-wider text-gray-500 mb-3 group-focus-within:text-primary transition">
+            Auction Duration
+          </label>
+          <div className="flex flex-wrap gap-4">
+            {['3 Days', '7 Days', '14 Days'].map((days) => (
+              <label key={days} className="flex-1 cursor-pointer">
+                <input className="hidden peer" name="duration" type="radio" />
+                <div className="text-center py-3 rounded-xl border border-gray-200 
+                peer-checked:bg-primary peer-checked:text-white 
+                text-sm transition-all hover:bg-gray-100 shadow-sm">
+                  {days}
+                </div>
+              </label>
+            ))}
+          </div>
+        </div>
+
+        {/* Textarea */}
+        <div className="md:col-span-2 group">
+          <label className="block text-xs font-semibold uppercase tracking-wider text-gray-500 mb-2 group-focus-within:text-primary transition">
+            Technical Specifications
+          </label>
+          <textarea
+            rows="3"
+            placeholder="GSM, Thread count, Dyeing method, or sustainability certifications..."
+            className="w-full bg-white/70 border border-gray-200 rounded-xl px-4 py-3 font-body 
+            focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary 
+            shadow-sm hover:shadow-md transition-all resize-none placeholder:text-gray-400"
+          ></textarea>
+        </div>
+
+      </div>
+
+      {/* Button */}
+      <div className="pt-6">
+<button
+  type="submit"
+  className="w-full py-5 rounded-xl 
+  bg-[#8B5E3C] text-white 
+  font-semibold text-sm uppercase tracking-wide 
+  shadow-md hover:bg-[#7A4F32] hover:shadow-lg 
+  active:scale-[0.97] active:shadow-sm 
+  transition-all duration-200 
+  flex items-center justify-center gap-3"
+>
+  List for Auction
+  <span className="material-symbols-outlined text-sm">front_hand</span>
+</button>
+
+
+        <p className="text-center text-[10px] text-gray-400 mt-4 uppercase tracking-widest">
+          Listing will be reviewed within 24 hours
+        </p>
+      </div>
+
+    </form>
+
+  </div>
+</div>
+
+            </div>
+        </main>
+    );
 }
 
 export default Auction
